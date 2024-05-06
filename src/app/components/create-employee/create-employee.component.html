@@ -1,0 +1,46 @@
+
+<h3>Register Employee</h3>
+<form  class="col-sm-3" (ngSubmit)="onSubmit()" #dataForm="ngForm">
+    <!-- <label >First Name</label>
+ <input type="text" class="form-control" id="firstname"
+ required 
+ name="firstname" [(ngModel)]="createemployee.firstname"> -->
+
+ <mat-form-field>
+    <mat-label>First Name</mat-label>
+    <input matInput  name="firstname" [(ngModel)]="createemployee.firstname">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>last Name</mat-label>
+    <input matInput  name="lasstname" [(ngModel)]="createemployee.lastname">
+  </mat-form-field>
+
+
+  <mat-form-field>
+    <mat-label>email</mat-label>
+    <input matInput  name="email" [(ngModel)]="createemployee.email">
+  </mat-form-field>
+
+
+<!-- <label>Last Name</label>
+ <input type="text" class="form-control" id="lastname"
+ required 
+ name="lastname" [(ngModel)]="createemployee.lastname">
+
+
+ <label>Email</label>
+ <input type="text" class="form-control" id="email"
+ required
+ name="email" [(ngModel)]="createemployee.email"> <br> -->
+  
+  
+  <button type="submit" class="btn btn-primary" [disabled]="!dataForm.valid">Add</button>
+  
+  
+  </form>
+
+
+
+
+

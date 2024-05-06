@@ -1,0 +1,24 @@
+<h3>Update Employee</h3>
+<form  class="col-sm-3" (ngSubmit)="onSubmit()" #dataForm="ngForm">
+    <label >First Name</label>
+ <input type="text" class="form-control" id="firstname"
+ required 
+ name="firstname" [(ngModel)]="update.firstname">
+
+
+<label>Last Name</label>
+ <input type="text" class="form-control" id="lastname"
+ required 
+ name="lastname" [(ngModel)]="update.lastname">
+
+
+ <label>Email</label>
+ <input type="text" class="form-control" id="email"
+ required
+ name="email" [(ngModel)]="update.email"> <br>
+  
+  
+  <button type="submit" class="btn btn-primary" [disabled]="!dataForm.valid">Add</button>
+  
+  
+  </form>

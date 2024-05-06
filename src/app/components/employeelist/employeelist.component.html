@@ -1,0 +1,34 @@
+<h1 class="text-center">employee details</h1>
+<table class="table">
+  
+
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">Email</th>
+        <th scope="col"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let e of allemp">
+        <td>{{e.id}}</td>
+        <td>{{e.firstname}}</td>
+        <td>{{e.lastname}}</td>
+        <td>{{e.email}}</td>
+
+        <td>
+          <button type="button" class="btn btn-secondary" (click)="updateEmployee(e.id)">Update</button>&nbsp;&nbsp;
+
+          <button type="button" class="btn btn-danger" (click)="deleteEmployee(e.id)">Delete</button>&nbsp;&nbsp;
+
+          <button mat-raised-button (click)="viewEmployee(e.id)">ViewDetails</button>&nbsp;&nbsp;
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  

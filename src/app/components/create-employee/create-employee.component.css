@@ -1,0 +1,10 @@
+.form{
+    margin-right:35%;
+}
+
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
